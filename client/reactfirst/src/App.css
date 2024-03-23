@@ -1,0 +1,104 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7;
+  font-family: Arial, sans-serif;
+}
+
+/* Top bar styles */
+.top-bar {
+  background-color: #ffffff;
+  color: #2B4B1E;
+  padding-left: 30px;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 205px;
+  width: calc(100% - 205px); /* Adjust width to account for left bar */
+  height: 70px;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+}
+
+
+.top-bar h1 {
+  margin: 0;
+}
+
+/* Left bar styles */
+.left-bar {
+  background-color: #ffffff;
+  color: #fff;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+
+.left-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-bar ul li {
+  margin-bottom: 10px;
+}
+
+.left-bar ul li a {
+  color: #92956F;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 6px 12px;
+}
+
+.left-bar ul li a:hover,
+.left-bar ul li a.active {
+  background: #a8a8a8;
+  color: #ffffff;
+}
+
+/* Content styles */
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.App-header {
+  text-align: center;
+  margin-top: 200px; /* Adjust as needed */
+}
+
+.App-header h2 {
+  font-size: 24px; /* Adjust as needed */
+  color: #333; /* Adjust as needed */
+}
+
+.App-header p {
+  font-size: 16px; /* Adjust as needed */
+  color: #666; /* Adjust as needed */
+}
+
+
+/* Search bar container styles */
+.search-bar-container {
+  background-color: #e0e0e0;
+  position: absolute;
+  width: calc(100vw - 260px); /* 100vw minus left bar width */
+  top: 80px;
+  left: 260px;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
